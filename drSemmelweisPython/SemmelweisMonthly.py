@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #utilizando o metodo read da dependencia pandas para ler documento csv
-monthly = pd.read_csv(r"C:\Users\bberi\OneDrive\Área de Trabalho\projeto python\monthly_deaths.csv", parse_dates=['date'])
+monthly = pd.read_csv(r"C:\Users\bberi\OneDrive\Área de Trabalho\drSemmelweisChallenge\datacampSemmelweisChallenge\drSemmelweisPython\monthly_deaths.csv", parse_dates=['date'])
 
 #criando uma nova tabela "proportion_deaths" que recebera a porcentagem de mortes por nascimento mensalmente
 monthly['proportion_deaths'] = monthly['deaths'] / monthly['births'] * 100

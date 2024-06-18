@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #utilizando o metodo read da dependencia pandas para ler documento csv
-yearly = pd.read_csv(r"C:\Users\bberi\OneDrive\Área de Trabalho\projeto python\yearly_deaths_by_clinic.csv")
+yearly = pd.read_csv(r"C:\Users\bberi\OneDrive\Área de Trabalho\drSemmelweisChallenge\datacampSemmelweisChallenge\drSemmelweisPython\yearly_deaths_by_clinic.csv")
 
 #criando uma nova tabela "proportion_deaths" que recebera a porcentagem de mortes por nascimento anualmente
 yearly['proportion_deaths'] = yearly['deaths'] / yearly['births'] * 100
