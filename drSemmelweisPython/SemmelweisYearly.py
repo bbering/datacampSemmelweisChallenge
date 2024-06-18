@@ -20,8 +20,9 @@ yearly.loc[0, 'deaths_mean_clinic'] = clinic1['proportion_deaths'].mean()
 yearly.loc[6, 'deaths_mean_clinic'] = clinic2['proportion_deaths'].mean()
 
 #declarando o componente grafico e seus atributos para plotar o grafico
-ax = clinic1.plot(x='year', y='proportion_deaths', label = 'testesmanufaturadosclinica1', legend=True)
-clinic2.plot(x='year', y='proportion_deaths', label = 'testesmanufaturadosclinica2', ax=ax, legend=True)
+ax = clinic1.plot(x='year', y='proportion_deaths', label = 'Yearly death percentage clinic 1', legend=True)
+clinic2.plot(x='year', y='proportion_deaths', label = 'Yearly death percentage clinic 2', ax=ax, legend=True)
+ax.grid()
 
 ax.set_ylabel("proportion deaths")
 

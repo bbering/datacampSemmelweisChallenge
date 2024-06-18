@@ -37,8 +37,8 @@ print("confidence interval: ", confidence_interval)
 fig, ax = plt.subplots()
 
 #plotando ambos os graficos
-before_washing.plot(x='date', y='proportion_deaths', label='death percentage before', ax=ax, legend=True)
-after_washing.plot(x='date', y='proportion_deaths', label='death percentage after', ax=ax, legend=True)
+before_washing.plot(x='date', y='proportion_deaths', label='Monthly death percentage before', ax=ax, legend=True)
+after_washing.plot(x='date', y='proportion_deaths', label='Monthly death percentage after', ax=ax, legend=True)
 
 #plotando o ponto referente a onde se passou a lavar as maos
 ax.scatter(x=at_washing['date'], y=at_washing['proportion_deaths'], color='green', marker='o', label='at washing')
